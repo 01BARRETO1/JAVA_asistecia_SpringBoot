@@ -22,6 +22,31 @@ public class Asistencia {
 		return "Asistencia [fechaClase=" + fechaClase + ", fechaHoraRegistro=" + fechaHoraRegistro + ", estado="
 				+ estado + "]";
 	}
+
+	// get and set 
+	public LocalDate getFechaClase() {
+		return fechaClase;
+	}
+
+	public void setFechaClase(LocalDate fechaClase) {
+		this.fechaClase = fechaClase;
+	}
+
+	public LocalDateTime getFechaHoraRegistro() {
+		return fechaHoraRegistro;
+	}
+
+	public void setFechaHoraRegistro(LocalDateTime fechaHoraRegistro) {
+		this.fechaHoraRegistro = fechaHoraRegistro;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
 	
 	
 	
