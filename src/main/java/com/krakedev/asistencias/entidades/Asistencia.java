@@ -3,10 +3,16 @@ package com.krakedev.asistencias.entidades;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class Asistencia {
-	private LocalDate fechaClase;
-	private LocalDateTime fechaHoraRegistro;
-	private String estado; //P-Presente A-Ausente
+	@JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate fechaClase;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime fechaHoraRegistro;
+
+    private String estado; // P-Presente A-Ausente
 	
 	//Constructor
 	public Asistencia(LocalDate fechaClase, LocalDateTime fechaHoraRegistro, String estado) {
